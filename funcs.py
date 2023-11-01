@@ -132,7 +132,7 @@ def create_tables_and_add_resources(resources):
     conn.commit()
 
 
-def get_resource(resource_id, resource_name):
+def get_news(resource_id, resource_name):
     select = f"SELECT * FROM resources WHERE resource_id={resource_id};"
     conn = sqlite3.connect('parsenews.db')
 
